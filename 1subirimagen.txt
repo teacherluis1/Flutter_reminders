@@ -1,0 +1,32 @@
+#Esta es la parte del pubspec.yaml
+#En el asssets le quite el signo de #,
+#por cada foto se debe de subir un assets
+#Hay que cerrar el vs code cada vez que suba una imagen
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/montanass.jpg
+    - assets/logo.png
+
+
+//esta es la parte del widget
+
+
+
+      body: ListView(
+        children: const [ Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Mi Primer App"),
+              Image(image: AssetImage("assets/montanass.jpg")),
+              Image(image: NetworkImage('https://cdn-icons-png.flaticon.com/512/9942/9942334.png')),
+              Image(image: AssetImage("assets/logo.png")),
+            
+              
+            ],
+        
+          ),
+        ),
+       ],
+      ),
